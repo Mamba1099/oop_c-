@@ -2,8 +2,8 @@
 using namespace std;
 
 void my_function() {
-    cout << "Hello, World!" << endl;
-    cout << "Goodbye, World!";
+    std::cout << "Hello, World!" << endl;
+    std::cout << "Goodbye, World!";
 }
 
 int main() {
