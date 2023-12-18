@@ -22,8 +22,27 @@ void my_logic() {
     // return 0 if false and 1 if true
     cout << (num1 > num2)<<endl;
 }
+void my_pointer() {
+    string food = "Pizza";  // A food variable of type string
+    string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
+
+    // Output the value of food (Pizza)
+    cout << food << "\n";
+
+    // Output the memory address of food (0x6dfed4)
+    cout << &food << "\n";
+
+    // Output the memory address of food with the pointer (0x6dfed4)
+    cout << ptr << "\n";
+
+    //output the value of food with the pointer (Pizza)
+    // Pizza
+    // 0x7ffe4e3a3340
+    // 0x7ffe4e3a3340
+}
 int main() {
     // my_number();
-    my_logic();
+    // my_logic();
+    my_pointer();
     return 0;
 } 
