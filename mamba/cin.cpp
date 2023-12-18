@@ -27,10 +27,10 @@ void my_pointer() {
     string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
 
     // Output the value of food (Pizza)
-    cout << food << "\n";
+    // cout << food << "\n";
 
     // Output the memory address of food (0x6dfed4)
-    cout << &food << "\n";
+    // cout << &food << "\n";
 
     // Output the memory address of food with the pointer (0x6dfed4)
     cout << ptr << "\n";
@@ -39,6 +39,15 @@ void my_pointer() {
     // Pizza
     // 0x7ffe4e3a3340
     // 0x7ffe4e3a3340
+    // Dereference: Output the value of food with the pointer (Pizza)
+    cout << *ptr << "\n";
+    // Change the value of the pointer
+    *ptr = "Hamburger";
+    // Output the new value of the pointer (Hamburger)
+    cout << *ptr << "\n";
+    cout << &food<< "\n";
+
+
 }
 int main() {
     // my_number();
